@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Sudoku</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- how to play icon -->
+    <i></i>
+
+    <!-- Game instructions -->
+    <div display="none">
+        <h2>How to play:</h2>
+        <ul>
+            <li>The 9x9 grid contains 9 smaller 3x3 grids and you can only use the numbers 1-9</li>
+            <li>Each row must contain the numbers 1-9 once</li>
+            <li>Each column must contain the numbers 1-9 once</li>
+            <li>Each 3x3 grid must contain the numbers 1-9 once</li>
+            <li>Make sure you don't repeat any numbers!</li>
+            <li>Never try to guess</li>
+            <li>Try to beat your last time and wrong move score</li>
+        </ul>
+    </div>
+
+    <!-- difficulty selector -->
+    <div>
+        <h2>Difficulty:</h2>
+        <input type="radio" name="difficulty" id="easy" value="easy">
+        <label for="easy">Easy</label>
+        <input type="radio" name="difficulty" id="medium" value="medium">
+        <label for="medium">Medium</label>
+        <input type="radio" name="difficulty" id="hard" value="hard">
+        <label for="hard">Hard</label>
+    </div>
+
+    <!-- Start new game button -->
+
+    <button>Start New Game</button>
+
+    <!-- Footer -->
+    <footer>
+        <i>github</i>
+        <p>Created by Sarah Marrey</p>
+    </footer>
+
+    <script src="scripts/game.js"></script>
+</body>
+</html>
