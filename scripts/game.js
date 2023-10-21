@@ -7,16 +7,30 @@ const mistakeCounter = document.getElementById("counter");
 
 // function to create 9x9 grid
 function createGrid() {
-	// Add rows and columns to empty html table 
+	// Add rows and columns to empty html table
+	for (let i = 0; i < 9; i++) {
+		let row = document.createElement("tr");
+		row.classList.add("row");
+		// Add class row to cells
+		for (let j = 0; j < 9; j++) {
+			let cell = document.createElement("td");
+			cell.classList.add("cell");
+			row.appendChild(cell);
+		}
+		gridContainer.appendChild(row);
+	}
+}
+createGrid();
+
+// Function to populate the Sudoku grid in the HTML table
+function populateGrid() {
 	// Fill with random numbers 1-9
-	Math.floor(Math.random() * 9) + 1;
+	cell.innerText = Math.floor(Math.random() * 9) + 1;
 	// Check for repeated numbers in row
 	// Check for repeated numbers in column
 	// Check for repeated numbers in 3x3 grid
 	// Solve from top-left
 }
-
-// Function to populate the Sudoku grid in the HTML table
 
 // Ensure board is valid and solvable
 
